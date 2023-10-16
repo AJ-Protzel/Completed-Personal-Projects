@@ -1,3 +1,11 @@
+## NYC Covid Analysis and Visualization
+The primary focus of this project is to create visual representations of data depicting the effects of COVID-19 over time, aiming to gain a better understanding of the pandemic's impact.
+
+## Information 
+**Author**: [Adrien Protzel](https://www.linkedin.com/in/adrien-protzel/)
+
+**Date last modified**: October 16th 2023
+
 # Ask - Defining the task
 
 The task is to analyze COVID-19 data for New York City (NYC) to understand the trends and impact of the pandemic, specifically focusing on the spread and treatment of the virus through time.
@@ -20,13 +28,13 @@ The analysis focused on identifying trends and relationships in the COVID-19 dat
 
 Based on the analysis, several insights and recommendations can be provided:
 
-The spread of COVID-19 in NYC exhibited distinct waves, with periods of rapid increase followed by stabilization and decline.
+- The spread of COVID-19 in NYC exhibited distinct waves, with periods of rapid increase followed by stabilization and decline.
 
-Public health measures, such as mask mandates and social distancing, were effective in reducing the spread of COVID-19.
+- Public health measures, such as mask mandates and social distancing, were effective in reducing the spread of COVID-19.
 
-Vaccines played a crucial role in reducing the severity of COVID-19 infections and hospitalizations.
+- Vaccines played a crucial role in reducing the severity of COVID-19 infections and hospitalizations.
 
-Healthcare infrastructure and resource allocation are essential for managing large-scale health crises.
+- Healthcare infrastructure and resource allocation are essential for managing large-scale health crises.
 
 # Act - Final Conclusion:
 
