@@ -36,26 +36,32 @@ https://fitabase.com/media/1930/fitabasedatadictionary102320.pdf
 
 ### Daily Distance vs Steps Taken
 ![Daily Distance vs  Steps Taken](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/ad6e398e-b50b-4604-a5c9-c9f679fcf863)
+
 The more steps taken equals a longer distance traveled per day. And most people walk about 9000 a day with an outlier of someone that walked an equivalent distance of a marathon. The trends mostly match distance and number of steps so there is low likelihood of cheated steps.
 
 ### Calories Burned While In Bed
 ![Calories Burned While In Bed Awake](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/43ef1dab-e358-42ba-b024-3c5427d352b1)
+
 The graph proves that people who spend less time in bed and not sleeping have higher calories burned throughout the day. Most people spend about an hour a day in bed while not sleeping.
 
 ### Daily Distances vs  Min  of Sleep
 ![Daily Distances vs  Min  of Sleep](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/4d5f065c-bb48-4320-be91-8a08f2ba6760)
+
 This shows a trend of sleeping versus walking activity. While people who spend less time in bed have larger step counts. Sleeping too much or too little also affects how active the user is. The average person will sleep for about 7.5 hours which is also an ideal time for energy as distances walked trend downwards after more sleeping.
 
 ### Tracked and Logged Distance
 ![Tracked+Logged Distance = Total Distance](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/6362e366-9ec4-402b-b57f-ccea502dcd4d)
+
 Distance walked is both tracked and manually logged by the user. And so by checking the tracked + logged distance to the total recorded distance shows that the data is inaccurate. Meaning distance logged is most likely not added to total distance.
 
 ### Total Steps By Day
 ![Total Steps By Day](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/0296eb32-f713-4fbd-a794-a4f844f447fb)
+
 This shows what days  have the most steps taken. The middle of the week (Tuesday and Thursday) are the most active amongst the users.
 
 ### Days When Device Was Forgotten
 ![Days When Device Was Forgotten](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/2987d86a-f438-463b-90bb-e599a6386145)
+
 The days when the Fitbit were most often forgotten or misplaced were on weekends.
 
 ## Share - Providing Insights and Recommendations:
