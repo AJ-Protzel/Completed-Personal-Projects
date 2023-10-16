@@ -1,4 +1,10 @@
 # Bellabeat Case Study
+This project entails analyzing usage data from current outside and inhouse existing smart devices to gain valuable insights into their features and products.
+
+## Information 
+**Author**: [Adrien Protzel](https://www.linkedin.com/in/adrien-protzel/)
+
+**Date last modified**: October 16th 2023
 
 ## Ask - Defining the task:
 Chief Creative Officer of Bellabeat, Urska Srsen, has asked me to help inform marketing strategies. I am to look at usage data of current inhouse smart devices and outside devices for any insights to new products or features. I am then supposed to report my findings to the Bellabeat marketing team.
