@@ -5,6 +5,7 @@ This project provides a comprehensive analysis of a survey conducted among data 
 
 ## Information 
 **Author**: [Adrien Protzel](https://www.linkedin.com/in/adrien-protzel/)
+
 **Date last modified**: October 16th 2023
 
 ## Ask - Defining the task:
