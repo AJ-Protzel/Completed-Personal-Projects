@@ -31,7 +31,7 @@ https://fitabase.com/media/1930/fitabasedatadictionary102320.pdf
 9. Added TimeInBedAwake = TotalTimeInBed-TotalMinutesAsleep
 10. Added DeviceLeftBehind T/F
 
-# Analyze - Identifying trends and relationships
+# Analyze - Identifying trends and relationships:
 The more steps taken equals a longer distance traveled per day. And most people walk about 9000 a day with an outlier of someone that walked an equivalent distance of a marathon. The trends mostly match distance and number of steps so there is low likelihood of cheated steps.
 
 ![Daily Distance vs  Steps Taken](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/ad6e398e-b50b-4604-a5c9-c9f679fcf863)
@@ -56,7 +56,7 @@ The days when the Fitbit were most often forgotten or misplaced were on weekends
 
 ![Days When Device Was Forgotten](https://github.com/AJ-Protzel/Personal-Projects/assets/31741271/2987d86a-f438-463b-90bb-e599a6386145)
 
-# Share - Providing Insights and Recommendations
+# Share - Providing Insights and Recommendations:
 Not all users are diligently logging all activities. The device does automatically track and record activity but users are also either forgetting to wear the device or take them off for inaccurate data collection. There are clear days of motivation to wear and or log on to the Fitbit.
 
 Looking at the data, I would say that people do wear their Fitbits to sleep. And days that have no activity are most likely from needing to take off the device to change and then forgetting or leaving it while they continue their day. It is also a possibility of either fashion and necessity, not needing the function of a watch or activity tracker on weekends while they relax at home away from work. Or the device does not suit their outfits and so they elect to leave it at home. More data would need to be gathered to determine if the aesthetics of the device needs improvement.More data will need to be viewed to determine how often the user views their own data and on what device. Sales between the Ivy and Time may tell us what users prefer, simple automated activity tracking, or more general device usage.
@@ -65,7 +65,7 @@ During the week and while the device is worn. Users tend to prefer their data to
 
 However, apart from the data that shows when the Fitbit is most likely forgotten or not worn. The data does not tell us the most used features or most wanted features of the Fitbit.
 
-# Act - Final Conclusion
+# Act - Final Conclusion:
 The marketing team can emphasize a longer battery life and ease of use or automated activity tracking. There can also be a new selection of designs or colors for the device.
 
 
