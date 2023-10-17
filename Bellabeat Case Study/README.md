@@ -33,7 +33,7 @@ https://fitabase.com/media/1930/fitabasedatadictionary102320.pdf
 4. Merged daily files into one file on UID
 5. Merged hourly files into one file on UID
 6. Added UID to weightLogInfo_merged and minuteSleep_merged
-7. Renamed files ###_merged and saved all in long format
+7. Renamed files ###_merged and saved all in long format 
 8. Put merged files into “Working Files” folder
 9. Added TimeInBedAwake = TotalTimeInBed-TotalMinutesAsleep
 10. Added DeviceLeftBehind T/F
