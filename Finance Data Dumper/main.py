@@ -54,7 +54,7 @@ def create_table(cursor):
 ############################################################################################ read_files
 def read_files(cursor, data_folder_path):
     for file in os.listdir(data_folder_path):
-        # [skip header, date row, description row, amount row]
+        # [skip header, date, description, amount]
         csv_key_map = {
           "bofa credit.csv": [1,0,2,4],
           "bofa savings.csv": [7,0,1,2],
@@ -65,7 +65,7 @@ def read_files(cursor, data_folder_path):
           print(f"Processing: {file}")
           fill_table(cursor, os.path.join(data_folder_path, file), csv_key_map[file])
         else:
-          print(f"Error: {file} Function Not Found")
+          print(f"Error: {file}")
 
 ############################################################################################ fill_table
 def fill_table(cursor, file_path, key):
@@ -95,8 +95,8 @@ def fill_table(cursor, file_path, key):
 
   cursor.connection.commit()
 
-###################################################################################### remove_duplicate
-def remove_duplicate(cursor):
+##################################################################################### remove_duplicates
+def remove_duplicates(cursor):
     deduplication_query = """
         DELETE FROM transactions AS t1
         WHERE EXISTS (
@@ -126,7 +126,7 @@ def main():
 
     create_table(cursor)
     read_files(cursor, data_folder_path)
-    remove_duplicate(cursor)
+    remove_duplicates(cursor)
 
     connection.commit()
     connection.close()
