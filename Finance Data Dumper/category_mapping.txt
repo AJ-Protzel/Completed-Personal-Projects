@@ -1,1 +1,9 @@
-BA ELECTRONIC PAYMENT=Transfer
+vanguard ems=cash
+transfer=transfer
+robinhood=cash
+mercari=bills & utilities
+interest=cash
+amazon=shopping
+insurance=bills & utilities
+winco=groceries
+venmo=cash
