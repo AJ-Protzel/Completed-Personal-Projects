@@ -18,6 +18,11 @@ MONTHS = {
   12: "December"
 }
 
+file_description_map = r"Mappings/description_map.txt"
+file_category_map = r"Mappings/category_map.txt"
+file_account_map = r"Mappings/account_map.txt"
+file_key = r"Mappings/key.txt"
+
 #======================================================================================== load_mappings
 def load_mappings(file_path):
   mapping = {}
@@ -27,13 +32,13 @@ def load_mappings(file_path):
       mapping[key] = value
   return mapping
 
-description_map = load_mappings("Mappings/description_map.txt")
-category_map = load_mappings("Mappings/category_map.txt")
-account_map = load_mappings("Mappings/account_map.txt")
+description_map = load_mappings(file_description_map)
+category_map = load_mappings(file_category_map)
+account_map = load_mappings(file_account_map)
 
 #===================================================================================== contains_keyword
 def contains_keyword(text):
-  with open("Mappings/key.txt", "r") as file:
+  with open(file_key, "r") as file:
     words = file.readlines()
     words = [word.strip() for word in words]
   
@@ -60,11 +65,20 @@ def create_table(cursor):
 
 ############################################################################################ read_files
 def read_files(cursor):
-  config = configparser.ConfigParser()
-  config.read("Mappings\account_map.txt")  # Replace with path if needed
+  print("READING")
+  # config = configparser.ConfigParser()
+  # config.read(file_account_map)  # Replace with path if needed
+  # print(config)
 
-  for file in os.listdir("Accounts"):
-    print(file)
+  # for i in account_map:
+  #   print(i)
+  # print(account_map)
+  # for i in category_map:
+  #   print(i["amazon"])
+  # print(category_map["amazon"])
+
+  # for file in os.listdir("Accounts"):
+  #   print(file)
     # account_map = [int(x) for x in config['DEFAULT'][file].split(',')]
     # fill_table(cursor, os.path.join(path, file), account_map)
 
@@ -112,11 +126,11 @@ def get_description(desc, amount):
     if description is None:
       user_input = input(f"Description {amount} {desc} = ")
       user_input.lower()
-      with open('description_map.txt', 'a') as mapping_file:
+      with open(file_description_map, 'a') as mapping_file:
         mapping_file.write(f"{desc}={user_input}\n")
       description = user_input
   
-    with open('key.txt', 'a') as key_file:
+    with open(file_key, 'a') as key_file:
       key_file.write(f"{description}\n")
 
   return description.lower()
@@ -127,7 +141,7 @@ def get_category(desc):
   if category is None:
     user_input = input(f"Category {desc} = ")
     user_input.lower()
-    with open('category_map.txt', 'a') as mapping_file:
+    with open(file_category_map, 'a') as mapping_file:
       mapping_file.write(f"{desc}={user_input}\n")
     category = user_input
   
@@ -168,18 +182,21 @@ def remove_duplicates(cursor):
     """
     cursor.execute(deduplication_query)
 
-    files = ["Mappings\category_map.txt", "Mappings\key.txt"]
+    files = [file_category_map, file_key]
     for f in files:
-      # f = os.path.join(path, f)
-      with open(f, 'r+', encoding='utf-8') as file:
+      with open(f, 'r+') as file:
         lines = set(line.lower() for line in file)
         file.seek(0)
         file.writelines(lines)
+
+    print("data cleaned")
 
 #######################################################################################################
 ################################################################################################## Main
 #######################################################################################################
 def main():
+
+
     database_file = "main.db"
     connection = sqlite3.connect(database_file)
     cursor = connection.cursor()

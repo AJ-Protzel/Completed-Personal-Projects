@@ -1,10 +1,10 @@
-insurance
 vanguard ems
-robinhood
-transfer
-mercari
-ach credit
+insurance
 venmo
-winco
+ach credit
 interest
+winco
+mercari
+transfer
 ach debit
+robinhood
