@@ -1,0 +1,9 @@
+transfer=transfer
+mercari=bills & utilities
+venmo=cash
+amazon=shopping
+vanguard ems=cash
+winco=groceries
+interest=cash
+robinhood=cash
+insurance=bills & utilities

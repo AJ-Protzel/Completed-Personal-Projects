@@ -1,6 +1,7 @@
+import os
 import csv
 import sqlite3
-import os
+import configparser
 
 MONTHS = {
   1: "January",
@@ -26,12 +27,13 @@ def load_mappings(file_path):
       mapping[key] = value
   return mapping
 
-description_mapping = load_mappings("description_mapping.txt")
-category_mapping = load_mappings("category_mapping.txt")
+description_map = load_mappings("Mappings/description_map.txt")
+category_map = load_mappings("Mappings/category_map.txt")
+account_map = load_mappings("Mappings/account_map.txt")
 
 #===================================================================================== contains_keyword
 def contains_keyword(text):
-  with open("key.txt", "r") as file:
+  with open("Mappings/key.txt", "r") as file:
     words = file.readlines()
     words = [word.strip() for word in words]
   
@@ -57,23 +59,14 @@ def create_table(cursor):
   cursor.execute(create_table_query)
 
 ############################################################################################ read_files
-def read_files(cursor, data_folder_path):
-    for file in os.listdir(data_folder_path):
-        # [skip lines, date, description, debit-, credit+]
-        csv_key_map = {
-          "redneck checking.csv": [1,1,3,4,5],
-          "redneck savings.csv": [1,1,3,4,5],
-          "bofa credit.csv": [1,0,2,4,0],
-          "bofa savings.csv": [7,0,1,2,0],
-          "prime credit.csv": [1,1,2,5,0],
-          "chase credit.csv": [1,1,2,5,0],
-        }
+def read_files(cursor):
+  config = configparser.ConfigParser()
+  config.read("Mappings\account_map.txt")  # Replace with path if needed
 
-        if file in csv_key_map:
-          print(f"Processing: {file}")
-          fill_table(cursor, os.path.join(data_folder_path, file), csv_key_map[file])
-        else:
-          print(f"Error: {file}")
+  for file in os.listdir("Accounts"):
+    print(file)
+    # account_map = [int(x) for x in config['DEFAULT'][file].split(',')]
+    # fill_table(cursor, os.path.join(path, file), account_map)
 
 ############################################################################################ fill_table
 def fill_table(cursor, file_path, key):
@@ -115,11 +108,11 @@ def get_description(desc, amount):
     description = "transfer"
 
   if description is None:
-    description = description_mapping.get(desc, None)
+    description = description_map.get(desc, None)
     if description is None:
       user_input = input(f"Description {amount} {desc} = ")
       user_input.lower()
-      with open('description_mapping.txt', 'a') as mapping_file:
+      with open('description_map.txt', 'a') as mapping_file:
         mapping_file.write(f"{desc}={user_input}\n")
       description = user_input
   
@@ -130,11 +123,11 @@ def get_description(desc, amount):
 
 #----------------------------------------------------------------------------------------- get_category
 def get_category(desc):
-  category = category_mapping.get(desc, None)
+  category = category_map.get(desc, None)
   if category is None:
     user_input = input(f"Category {desc} = ")
     user_input.lower()
-    with open('category_mapping.txt', 'a') as mapping_file:
+    with open('category_map.txt', 'a') as mapping_file:
       mapping_file.write(f"{desc}={user_input}\n")
     category = user_input
   
@@ -175,17 +168,24 @@ def remove_duplicates(cursor):
     """
     cursor.execute(deduplication_query)
 
+    files = ["Mappings\category_map.txt", "Mappings\key.txt"]
+    for f in files:
+      # f = os.path.join(path, f)
+      with open(f, 'r+', encoding='utf-8') as file:
+        lines = set(line.lower() for line in file)
+        file.seek(0)
+        file.writelines(lines)
+
 #######################################################################################################
 ################################################################################################## Main
 #######################################################################################################
 def main():
-    data_folder_path = "data"
     database_file = "main.db"
     connection = sqlite3.connect(database_file)
     cursor = connection.cursor()
 
     create_table(cursor)
-    read_files(cursor, data_folder_path)
+    read_files(cursor)
     remove_duplicates(cursor)
 
     connection.commit()
