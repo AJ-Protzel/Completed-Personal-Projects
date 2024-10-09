@@ -1,0 +1,58 @@
+Month,Year,Transaction Date,Transaction Description,Transaction Amount,Account type,Bank,Card
+October,2024,10/07/2024,BPS*BILT REWARDS B NEW YORK NY,-201.65,credit_card,CreditBilt,Bilt
+October,2024,10/03/2024,APPLE.COM/BILL 866-712-7753 CA,-1.99,credit_card,CreditBilt,Bilt
+October,2024,10/01/2024,PORTLAND GENERAL ELECT 8005428818 OR,-77.25,credit_card,CreditBilt,Bilt
+October,2024,10/01/2024,BPS*BILT REWARDS B NEW YORK NY,-50.0,credit_card,CreditBilt,Bilt
+September,2024,09/29/2024,MCDONALDS 3732 PORTLAND OR,-1.49,credit_card,CreditBilt,Bilt
+September,2024,09/25/2024,Bill Pay Payment,-96.84,credit_card,CreditBilt,Bilt
+September,2024,09/11/2024,Bill Pay Payment,-128.91,credit_card,CreditBilt,Bilt
+September,2024,09/11/2024,XFINITY MOBILE 888-936-4968 PA,-96.84,credit_card,CreditBilt,Bilt
+September,2024,09/08/2024,MCDONALD'S F3732 PORTLAND OR,-8.8,credit_card,CreditBilt,Bilt
+September,2024,09/08/2024,MCDONALD'S F3732 PORTLAND OR,-3.5,credit_card,CreditBilt,Bilt
+September,2024,09/08/2024,MCDONALD'S F3732 PORTLAND OR,-1.49,credit_card,CreditBilt,Bilt
+September,2024,09/06/2024,DUTCH BROS OR2304 PORTLAND OR,-10.0,credit_card,CreditBilt,Bilt
+September,2024,09/03/2024,BPS*BILT REWARDS B NEW YORK NY,-50.0,credit_card,CreditBilt,Bilt
+September,2024,09/03/2024,TARGET 00027797 PORTLAND OR,-4.88,credit_card,CreditBilt,Bilt
+September,2024,09/02/2024,TARGET 00027797 PORTLAND OR,-7.98,credit_card,CreditBilt,Bilt
+August,2024,08/31/2024,DUTCH BROS OR2305 PORTLAND OR,-11.25,credit_card,CreditBilt,Bilt
+August,2024,08/23/2024,PANERA BREAD #202157 O 503-285-0200 OR,-5.99,credit_card,CreditBilt,Bilt
+August,2024,08/23/2024,PANERA BREAD #202157 O 503-285-0200 OR,-7.59,credit_card,CreditBilt,Bilt
+August,2024,08/22/2024,COMCAST PORTLAND 800-266-2278 OR,-17.43,credit_card,CreditBilt,Bilt
+August,2024,08/10/2024,Bill Pay Payment,-2336.91,credit_card,CreditBilt,Bilt
+August,2024,08/08/2024,MCDONALD'S F3732 PORTLAND OR,-1.35,credit_card,CreditBilt,Bilt
+August,2024,08/02/2024,MCDONALDS 2160 BEAVERTON OR,-5.85,credit_card,CreditBilt,Bilt
+August,2024,08/01/2024,BPS*BILT B RENT PMT NEW YORK NY,-360.35,credit_card,CreditBilt,Bilt
+August,2024,08/01/2024,BPS*BILT REWARDS B NEW YORK NY,-1969.36,credit_card,CreditBilt,Bilt
+July,2024,07/20/2024,Bill Pay Payment,-3896.2,credit_card,CreditBilt,Bilt
+July,2024,07/13/2024,MCDONALD'S F2160 BEAVERTON OR,-4.55,credit_card,CreditBilt,Bilt
+July,2024,07/13/2024,MCDONALD'S F2160 BEAVERTON OR,-3.4,credit_card,CreditBilt,Bilt
+July,2024,07/12/2024,DUTCH BROS OR3103 BEAVERTON OR,-11.4,credit_card,CreditBilt,Bilt
+July,2024,07/11/2024,MCDONALD'S F2160 BEAVERTON OR,-11.35,credit_card,CreditBilt,Bilt
+September,2024,09/23/2024,COSTCO GAS #0002 PORTLAND OR,-23.56,credit_card,CreditBofA,
+September,2024,09/23/2024,COSTCO WHSE #0002 PORTLAND OR,-150.15,credit_card,CreditBofA,
+September,2024,09/23/2024,COSTCO WHSE #0002 PORTLAND OR,-51.94,credit_card,CreditBofA,
+September,2024,09/23/2024,COSTCO WHSE #0002 PORTLAND OR,-19.99,credit_card,CreditBofA,
+September,2024,09/23/2024,WWW COSTCO COM 800-955-2292 WA,-39.99,credit_card,CreditBofA,
+September,2024,09/21/2024,COSTCO GAS #0009 ALOHA OR,-38.62,credit_card,CreditBofA,
+September,2024,09/19/2024,COSTCO GAS #1703 RIDGEFIELD WA,-17.99,credit_card,CreditBofA,
+September,2024,09/16/2024,COSTCO GAS #0009 ALOHA OR,-34.48,credit_card,CreditBofA,
+September,2024,09/16/2024,COSTCO WHSE #0009 ALOHA OR,-245.33,credit_card,CreditBofA,
+September,2024,09/16/2024,COSTCO WHSE #0009 ALOHA OR,-49.99,credit_card,CreditBofA,
+September,2024,09/12/2024,BA ELECTRONIC PAYMENT,-242.96,credit_card,CreditBofA,
+September,2024,09/07/2024,COSTCO GAS #0009 ALOHA OR,-27.18,credit_card,CreditBofA,
+September,2024,09/07/2024,COSTCO WHSE #0009 ALOHA OR,-140.89,credit_card,CreditBofA,
+September,2024,09/05/2024,FAIRYLOOT US HTTPSUS.FAIRYOR,-34.9,credit_card,CreditBofA,
+September,2024,09/04/2024,WWW COSTCO COM 800-955-2292 WA,-39.99,credit_card,CreditBofA,
+August,2024,08/08/2024,Beginning balance as of 08/08/2024,,savings,SavingsBofA,Savings
+August,2024,08/08/2024,Monthly Maintenance Fee,-8.00,savings,SavingsBofA,Savings
+August,2024,08/12/2024,Zelle payment from Kyle Jasuta Conf# 0FBX1Q3LA,200.00,savings,SavingsBofA,Savings
+August,2024,08/15/2024,BKOFAMERICA MOBILE 08/15 XXXXX41892 DEPOSIT *MOBILE CA,50.00,savings,SavingsBofA,Savings
+August,2024,08/16/2024,Transfer WEALTHFRONT,1.00,savings,SavingsBofA,Savings
+August,2024,08/19/2024,Wealthfront DES:EDI PYMNTS ID:2E6B97AE9E714F INDN:Adrien Protzel CO ID:XXXXX67207 WEB,-393.56,savings,SavingsBofA,Savings
+August,2024,08/22/2024,BKOFAMERICA MOBILE 08/22 XXXXX90069 DEPOSIT *MOBILE CA,"1,497.32",savings,SavingsBofA,Savings
+August,2024,08/26/2024,"Zelle payment from DOUGLAS ZELLER for Quad""; Conf# 0IP9OTPMW""","3,000.00",savings,SavingsBofA,Savings
+August,2024,08/26/2024,"Zelle payment from DOUGLAS ZELLER for Quad""; Conf# 0IP9OU9Z5""",200.00,savings,SavingsBofA,Savings
+August,2024,08/29/2024,Wealthfront DES:EDI PYMNTS ID:5DEA1C0B95C147 INDN:Adrien Protzel CO ID:XXXXX67207 WEB,"-4,298.32",savings,SavingsBofA,Savings
+September,2024,09/03/2024,BKOFAMERICA MOBILE 08/31 XXXXX67237 DEPOSIT *MOBILE CA,666.00,savings,SavingsBofA,Savings
+September,2024,09/03/2024,"Zelle payment to Doug Zeller for Vehicals storage for September""; Conf# ep5twg3rg""",-100.00,savings,SavingsBofA,Savings
+September,2024,09/05/2024,Interest Earned,0.01,savings,SavingsBofA,Savings

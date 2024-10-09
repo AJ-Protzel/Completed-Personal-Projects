@@ -79,8 +79,8 @@ def read_files(cursor):
 
   # for file in os.listdir("Accounts"):
   #   print(file)
-    # account_map = [int(x) for x in config['DEFAULT'][file].split(',')]
-    # fill_table(cursor, os.path.join(path, file), account_map)
+  #   account_map = [int(x) for x in config['DEFAULT'][file].split(',')]
+  #   fill_table(cursor, os.path.join(path, file), account_map)
 
 ############################################################################################ fill_table
 def fill_table(cursor, file_path, key):
