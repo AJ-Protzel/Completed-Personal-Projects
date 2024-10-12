@@ -15,3 +15,10 @@ def compile_credit_amazon(root_dir):
 # Example usage
 if __name__ == "__main__":
     compile_credit_amazon("Data/Credit/Amazon")
+
+
+def add(a: int, b: int) -> int:
+    return a + b
+
+def string(s: str) -> str:
+    return f"{s}"
